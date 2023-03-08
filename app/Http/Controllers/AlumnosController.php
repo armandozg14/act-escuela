@@ -50,5 +50,12 @@ class AlumnosController extends Controller
         return redirect()->route('alumnos.edit', $id)->with('exito', 'El alumno se ha actualizado exitosamente');
     }
 
+    public function delete($id){
+        $alumno = Alumno::find($id);
+
+        $argumentos = array();
+        $argumentos.
+    }
+
 
 }
